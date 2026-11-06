@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="860" viewBox="0 0 1440 860">
+ <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#2f49f9"/></marker></defs>
+ <rect width="1440" height="860" fill="#f8fafc"/>
+ <g font-family="Arial, sans-serif" fill="#111827">
+ <text x="70" y="70" font-size="34" font-weight="700">PosLine / System Architecture</text>
+ <text x="70" y="106" font-size="18" fill="#64748b">Conceptual overview - no internal endpoints or deployment details</text>
+ <g fill="white" stroke="#dce2ed" stroke-width="2">
+ <rect x="70" y="170" width="300" height="120" rx="8"/><rect x="520" y="170" width="360" height="120" rx="8"/>
+ <rect x="1040" y="145" width="320" height="90" rx="8"/><rect x="1040" y="270" width="320" height="90" rx="8"/>
+ <rect x="520" y="400" width="360" height="120" rx="8"/>
+ <rect x="520" y="630" width="360" height="120" rx="8"/>
+ <rect x="70" y="630" width="300" height="120" rx="8"/><rect x="1040" y="630" width="320" height="120" rx="8"/>
+ </g>
+ <g font-size="24" font-weight="700" text-anchor="middle">
+ <text x="220" y="216">Management Console</text><text x="700" y="216">Spring Boot Backend</text>
+ <text x="1200" y="181">H2 / Flyway</text><text x="1200" y="306">Redis</text>
+ <text x="700" y="449">EMQX MQTT Broker</text><text x="700" y="678">Android POS Agent</text>
+ <text x="220" y="678">Payment UI</text><text x="1200" y="678">TaxiPos</text>
+ </g>
+ <g font-size="17" fill="#64748b" text-anchor="middle">
+ <text x="220" y="248">React - REST - WebSocket</text><text x="700" y="248">Validation - commands - bulk jobs</text>
+ <text x="1200" y="211">Development records / audit</text><text x="1200" y="336">Live state / recent heartbeats</text>
+ <text x="700" y="482">mTLS - terminal namespace ACLs</text><text x="700" y="712">Kotlin - device controls - telemetry</text>
+ <text x="220" y="712">Local theme control</text><text x="1200" y="712">Local request bridge</text>
+ </g>
+ <g stroke="#2f49f9" stroke-width="3" fill="none" marker-start="url(#arrow)" marker-end="url(#arrow)">
+ <path d="M390 230H500"/><path d="M900 190H1020"/><path d="M900 315H1020"/>
+ <path d="M700 310V380"/><path d="M700 540V610"/>
+ <path d="M390 690H500"/><path d="M900 690H1020"/>
+ </g>
+ <g font-size="16" fill="#2f49f9">
+ <text x="405" y="211">API / live</text><text x="720" y="352">Commands / responses</text>
+ <text x="720" y="583">Secure MQTT</text><text x="410" y="669">AIDL</text><text x="935" y="669">AIDL</text>
+ </g>
+ <text x="70" y="810" font-size="17" fill="#64748b">Screen captures use a separate consent-based HTTPS upload path. All labels are illustrative.</text>
+ </g>
+</svg>
